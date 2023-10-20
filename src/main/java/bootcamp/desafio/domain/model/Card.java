@@ -17,8 +17,13 @@ public class Card {
   @Column(unique = true, nullable = false)
   private String number;
 
-  @Column(precision = 18, scale = 2, nullable = false)
+  @Column( name = "available_limit", precision = 18, scale = 2, nullable = false)
   private BigDecimal limit;
+
+
+  public Card() {
+  }
+
 
   public Card(Long id, String number, BigDecimal limit) {
     this.id = id;

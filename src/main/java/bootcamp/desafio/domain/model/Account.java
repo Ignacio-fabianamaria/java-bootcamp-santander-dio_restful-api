@@ -22,7 +22,7 @@ public class Account {
 
   @Column(precision = 18, scale = 2, nullable = false)
   private BigDecimal balance;
-  @Column(precision = 18, scale = 2, nullable = false)
+  @Column(name = "additional_limit",precision = 18, scale = 2, nullable = false)
   private BigDecimal limit;
 
   public Account(Long id, String number, String agency, BigDecimal balance, BigDecimal limit) {
@@ -32,6 +32,9 @@ public class Account {
     this.balance = balance;
     this.limit = limit;
   }
+  public Account() {
+    // Construtor padrão vazio
+}
 
   public Long getId() {
     return this.id;

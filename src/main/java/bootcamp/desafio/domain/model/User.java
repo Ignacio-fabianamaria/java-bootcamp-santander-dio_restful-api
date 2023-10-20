@@ -22,6 +22,10 @@ public class User {
   @OneToOne(cascade = CascadeType.ALL)
   private Card card;
 
+  public User() {
+  }
+
+
   public User(Long id, String name, Account account, Card card) {
     this.id = id;
     this.name = name;
@@ -60,5 +64,9 @@ public class User {
   public void setCard(Card card) {
     this.card = card;
   }
+
+public boolean isPresent() {
+    return false;
+}
 
 }
