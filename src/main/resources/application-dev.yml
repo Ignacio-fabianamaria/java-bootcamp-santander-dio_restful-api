@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:sdw2023 # URL de conexão com o banco de dados H2 (banco de dados em memória para desenvolvimento)
+    username: sdw2023 # Nome de usuário para acessar o banco de dados
+    password: # Senha para acessar o banco de dados (vazio, pois é um banco de dados em memória)
+  jpa:
+    show-sql: true # Mostrar as instruções SQL executadas no console
+    open-in-view: false
+    hibernate:
+      ddl-auto: create # Ação a ser realizada no banco de dados: validate (validar), update (atualizar), create (criar), create-drop (criar e descartar)
+    properties:
+      hibernate:
+        format_sql: true # Formatar as instruções SQL para facilitar a leitura
+  h2:
+    console:
+      enabled: true # Ativar o console H2, que permite acessar o banco de dados H2 via navegador
+      path: /h2-console # Caminho para acessar o console H2
+      settings:
+        trace: false # Desativar a rastreabilidade no console H2 (melhor para segurança)
+        web-allow-others: false # Impedir o acesso ao console H2 por outros endereços IP
