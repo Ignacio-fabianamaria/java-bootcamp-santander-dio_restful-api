@@ -34,3 +34,37 @@ classDiagram
   User *--|> Account
   User *--|> Card
 ```
+
+## Exemplos de Requisições de Usuário
+
+### Criar um Novo Usuário
+
+![create user](src/main/resources/static/assets/created.png)
+
+### Error ao tentar criar um usuário já cadastrado
+
+![error user](src/main/resources/static/assets/user-ex.png)
+
+### Buscar um usuário pelo ID
+
+![user by id](src/main/resources/static/assets/find-by-id.png)
+
+### Buscar um usuário com um ID inexistende
+
+![user by id](src/main/resources/static/assets/find-by-id.png)
+
+## H2 - Console
+
+### Retornando todos os usuários cadastrados
+
+![user by id](src/main/resources/static/assets/h2-console01.png)
+
+### Retornando usuário pelo ID
+
+![user by id](src/main/resources/static/assets/h2-console02.png)
+
+
+
+
+
+
